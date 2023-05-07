@@ -1,0 +1,24 @@
+.leftsidebarContainer {
+    min-width: 400px;
+    width: 700px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.rightsidebarContainer {
+    position: fixed;
+    right: 0;
+    display: flex;
+    z-index: 4;
+}
+
+.mainBlock {
+    width: calc(100vw - 700px);
+    left: 700px;
+    right: 0;
+    position: relative;
+    height: 300px;
+    display: flex;
+}
