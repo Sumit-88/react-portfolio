@@ -740,6 +740,10 @@ main.drake-main {
 }
 
 /* 07 - Hero Section */
+.scroll-animation{
+    opacity: 1;
+    transform: translate(0px);
+}
 .hero-section {
     padding: 68px 0;
     position: relative;
@@ -787,6 +791,7 @@ main.drake-main {
     display: block;
 }
 .hero-section .hero-content .facts {
+    display: flex;
     gap: 100px;
     margin-top: 55px;
 }
@@ -1167,6 +1172,18 @@ body .body-overlay {
 .testimonial-area .testimonial-slider-wrap .testimonial-footer-nav .testimonial-nav #testimonial-slide-count .left {
     color: #fff;
 }
+.owl-height{
+    height: 349px; 
+} 
+.owl-stage{
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0s ease 0s; 
+    width: 2400px;
+}
+.owl-item{
+    width: 770px; 
+    margin-right: 30px;
+}
 
 /* 16 - Client */
 .clients-logos {
@@ -1219,6 +1236,10 @@ body .body-overlay {
 }
 .pricing-table-items .pricing-table .pricing-table-header .top {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    
 }
 .pricing-table-items .pricing-table .pricing-table-header h4 {
     font-size: 18px;
@@ -1366,6 +1387,9 @@ body .body-overlay {
 .contact-area .contact-content .contact-form .input-group.submit-btn-wrap {
     margin-bottom: 0;
     margin-top: 18px;
+}
+.messenger-box-contact__msg{
+    display: none;
 }
 
 

@@ -1,11 +1,38 @@
 import React, { forwardRef } from 'react';
 
-function Home({text},ref) {
-    return ( 
-        <div className='mainBlock' id='Home'>
-        <h1 ref={ref}>Home{text}</h1>
+function Home({ text }, ref) {
+    return (
+        <div ref={ref}className='mainBlock' id='Home'>{text}
+            <section className="hero-section page-section scroll-to-page" id="home">
+                <div className="custom-container">
+                    <div className="hero-content content-width">
+                        <div className="section-header">
+                            <h4 className="subtitle scroll-animation" data-animation="fade_from_bottom" >
+                                <i className="las la-home"></i> Introduce
+                            </h4>
+                            <h1 className="scroll-animation" data-animation="fade_from_bottom" >Say Hi from <span>Drake</span>, Framer Designer and Developer</h1>
+                        </div>
+                        <p className="scroll-animation" data-animation="fade_from_bottom" >I design and code beautifully simple things and i love what i do. Just simple like that!</p>
+                        <a href="#portfolio" className="go-to-project-btn scroll-to scroll-animation" data-animation="rotate_up" >
+                            <img src="/round-text.png" alt="Rounded text"/>
+                                <i className="las la-arrow-down"></i>
+                        </a>
+
+                        <div className="facts">
+                            <div className="left scroll-animation" data-animation="fade_from_left" >
+                                <h1>10+</h1>
+                                <p>Years of <br/>Experience</p>
+                            </div>
+                            <div className="right scroll-animation" data-animation="fade_from_right" >
+                                <h1>182+</h1>
+                                <p>projects completed on <br/>15 countries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-     );
+    );
 }
 
 export default forwardRef(Home);
